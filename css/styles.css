@@ -8,12 +8,9 @@ body.my-login-page {
 }
 
 .my-login-page .brand {
-	width: 90px;
-	height: 90px;
 	overflow: hidden;
-	border-radius: 50%;
 	margin: 40px auto;
-	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+	width: 200px;
 	position: relative;
 	z-index: 1;
 }
@@ -35,6 +32,17 @@ body.my-login-page {
 	padding: 10px;
 }
 
+.card{
+	transition: transfrom .6s;
+}
+
+.card:hover{
+	transform: translateY(-15px);
+	transition: transfrom .6s;
+}
+.custom-btn{
+	width: 150px !important;
+}
 .my-login-page .card .card-title {
 	margin-bottom: 30px;
 }
@@ -56,18 +64,11 @@ body.my-login-page {
 	color: #888;
 	text-align: center;
 }
-
-.btn-secondary{
-	background-color:rgb(252, 94, 21);
-	border:none
-}
-.btn-secondary:hover{
-	background-color:rgb(235, 76, 2);
-}
 .row{
 	margin-left: 0px;
 	margin-right: 0px;
 }
+
 @media screen and (max-width: 425px) {
 	.my-login-page .card-wrapper {
 		width: 90%;
